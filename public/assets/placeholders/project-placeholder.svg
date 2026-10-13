@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
-  <rect width="640" height="400" fill="#F2EEE6"/>
-  <rect x="1" y="1" width="638" height="398" fill="none" stroke="#CFC8BB" stroke-width="2" stroke-dasharray="6 6"/>
-  <text x="50%" y="48%" font-family="Source Sans 3, sans-serif" font-size="20" fill="#3D4658" text-anchor="middle">Project screenshot</text>
-  <text x="50%" y="58%" font-family="Source Sans 3, sans-serif" font-size="13" fill="#6E6A63" text-anchor="middle">Replace in /public/assets</text>
-</svg>

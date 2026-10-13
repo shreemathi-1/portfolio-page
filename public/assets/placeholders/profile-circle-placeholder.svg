@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
-  <rect width="480" height="480" fill="#FFFDFA"/>
-  <circle cx="240" cy="240" r="238" fill="#F2EEE6"/>
-  <text x="50%" y="48%" font-family="Source Sans 3, sans-serif" font-size="20" fill="#3D4658" text-anchor="middle">Profile photo</text>
-  <text x="50%" y="57%" font-family="Source Sans 3, sans-serif" font-size="13" fill="#6E6A63" text-anchor="middle">Replace in /public/assets</text>
-</svg>

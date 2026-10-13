@@ -82,7 +82,7 @@ export const skillGroups = [
   {
     category: "💻 Programming Languages",
     skills: [
-      { name: "Java", proof: null },
+      { name: "Java", proof: "assets/skills/java-1.png" },
       { name: "Python", proof: null },
     ],
   },
@@ -109,12 +109,12 @@ export const skillGroups = [
   {
     category: "🗄️ Databases & Cloud",
     skills: [
-      { name: "MySQL", proof: null },
+      { name: "MySQL", proof: "assets/skills/sql-1.png"},
       { name: "PostgreSQL", proof: null },
-      {
-        name: "AWS (basics)",
-        proof: "/assets/placeholders/certificate-placeholder.svg",
-      },
+    //  {
+    //     name: "AWS (basics)",
+    //     proof: "/assets/placeholders/certificate-placeholder.svg",
+    //   }, 
     ],
   },
   {
@@ -124,8 +124,8 @@ export const skillGroups = [
       { name: "Figma", proof: null },
       { name: "PostMan", proof: null },
       { name: "Vercel", proof: null },
-      { name: "Render", proof: null },
-      { name: "Docker (basics)", proof: null },
+      // { name: "Render", proof: null },
+      // { name: "Docker (basics)", proof: null },
     ],
   },
   {
@@ -160,8 +160,8 @@ export const projects = [
     video: "",
     screenshots: [
       "/assets/placeholders/project-placeholder.svg",
-      "/assets/placeholders/project-placeholder.svg",
-      "/assets/placeholders/project-placeholder.svg",
+      // "/assets/placeholders/project-placeholder.svg",
+      // "/assets/placeholders/project-placeholder.svg",
     ],
   },
   {
@@ -180,8 +180,8 @@ export const projects = [
     // live: "https://spendwise-demo.onrender.com",
     video: "",
     screenshots: [
-      "/assets/placeholders/project-placeholder.svg",
-      "/assets/placeholders/project-placeholder.svg",
+      "/assets/projects/repomind-1.png",
+      // "/assets/placeholders/project-placeholder.svg",
     ],
   },
   {
@@ -200,7 +200,7 @@ export const projects = [
     github: "",
     // live: "https://recipe-radar-demo.vercel.app",
     video: "",
-    screenshots: ["/assets/placeholders/project-placeholder.svg"],
+    screenshots: ["/assets/projects/rag-bot-1.png"],
   },
   // {
   //   id: "taskflow-cli",
@@ -271,28 +271,28 @@ export const certifications = [
     title: "Artificial intelligence",
     issuer: "Elewayte",
     date: "April - May 2024",
-    image: "/assets/certifications/artificial_intelligence.pdf",
+    image: "/assets/certifications/elewayte_AI_certificate.jpeg",
   },
   {
     id: "cert-2",
     title: "HTML Essential Training",
     issuer: "LinkedIn Learning",
     date: "May 2026",
-    image: "/assets/placeholders/certificate-placeholder.svg",
+    image: "/assets/certifications/html_LL_certificate.jpeg",
   },
   {
     id: "cert-3",
     title: "MySQL Essential Training",
     issuer: "LinkedIn Learning",
     date: "Jun 2026",
-    image: "/assets/",
+    image: "/assets/certifications/mySQL_LL_certificate.jpeg",
   },
   {
     id: "cert-4",
     title: "Learning Git and Githu",
     issuer: "LinkedIn Learning",
     date: "Jun 2026",
-    image: "/assets/placeholders/certificate-placeholder.svg",
+    image: "/assets/certifications/git_LL_certificate.jpeg",
   },
   {
     id: "cert-5",
@@ -315,7 +315,7 @@ export const achievements = [
     id: "ach-1",
     title: "Unisys UIP Project Ideathon — Finalist",
     year: "2026",
-    photo: "/assets/placeholders/achievement-placeholder.svg",
+    photo: "/assets/highlights/Unisys_certificate.jpeg",
     description:
       "Team of 4 selected among top 50 nationally out of 1000+ teams for a Project Innovation Ideathon Challenge ",
   },
@@ -323,7 +323,7 @@ export const achievements = [
     id: "ach-2",
     title: "College Debugging Competition” — 1st Place",
     year: "2024",
-    photo: "/assets/placeholders/achievement-placeholder.svg",
+    photo: "/assets/highlights/CTF_winning_certificate.jpeg",
     description:
       "Won the annual inter-department competitive Capture The Flag contest.",
   },
