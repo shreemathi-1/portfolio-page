@@ -82,18 +82,18 @@ export const skillGroups = [
   {
     category: "💻 Programming Languages",
     skills: [
-      { name: "Java", proof: "assets/skills/java-1.png" },
-      { name: "Python", proof: null },
+      { name: "Java", proof: "assets/skills/java.png" },
+      { name: "Python", proof:"assets/skills/python.png"   },
     ],
   },
   {
     category: "🎨 Frontend",
     skills: [
-      { name: "HTML / CSS", proof: null },
-      { name: "JavaScript", proof: null },
+      { name: "HTML / CSS", proof: "assets/skills/html.png"  },
+      { name: "JavaScript", proof: "assets/skills/javascript.png"  },
       {
         name: "React",
-        proof: "/assets/placeholders/certificate-placeholder.svg",
+        proof: "assets/skills/react.png",
       },
       // { name: "Redux", proof: null },
     ],
@@ -101,16 +101,16 @@ export const skillGroups = [
   {
     category: "⚙️ Backend & APIs",
     skills: [
-      { name: "SpringBoot", proof: null },
-      { name: "Node.js / Express", proof: null },
-      { name: "REST APIs", proof: null },
+      { name: "SpringBoot", proof: "assets/skills/springboot.png" },
+      { name: "Node.js / Express", proof: "assets/skills/nodejs.png" },
+      { name: "REST APIs", proof: "assets/skills/springboot.png" },
     ],
   },
   {
     category: "🗄️ Databases & Cloud",
     skills: [
       { name: "MySQL", proof: "assets/skills/sql-1.png"},
-      { name: "PostgreSQL", proof: null },
+      { name: "PostgreSQL", proof: "assets/skills/postgres.png" },
     //  {
     //     name: "AWS (basics)",
     //     proof: "/assets/placeholders/certificate-placeholder.svg",
@@ -120,21 +120,22 @@ export const skillGroups = [
   {
     category: " 🛠️ Tools & Workflow",
     skills: [
-      { name: "Git & GitHub", proof: null },
-      { name: "Figma", proof: null },
-      { name: "PostMan", proof: null },
-      { name: "Vercel", proof: null },
+      { name: "Git & GitHub", proof: "assets/skills/github.png" },
+      { name: "Figma", proof: "assets/skills/figma.png" },
+      { name: "PostMan", proof: "assets/skills/postman.png"},
+      { name: "Vercel", proof: "assets/skills/vercel.png" },
       // { name: "Render", proof: null },
-      // { name: "Docker (basics)", proof: null },
+      { name: "Docker (basics)", proof: "assets/skills/docker.png" },
     ],
   },
   {
     category: "🤖 AI Skills",
     skills: [
-      { name: "RAG", proof: null },
-      { name: "Agents & skills", proof: null },
-      { name: "Agent harness", proof: null },
-      { name: "Agent-based development", proof: null },
+      { name: "RAG", proof: "/assets/projects/rag-bot-1.png" },
+      { name: "Agents & skills", proof: "assets/skills/agents and skills.png" },
+      { name: "Agent harness", proof: "assets/skills/harness.png"},
+      { name: "Agent-based development", proof: "assets/skills/agents and skills.png" },
+      { name: "Claude code", proof: "assets/skills/claude-code.png"}
     ],
   },
 ];
@@ -159,7 +160,7 @@ export const projects = [
     // live: "",
     video: "",
     screenshots: [
-      "/assets/placeholders/project-placeholder.svg",
+      "/assets/projects/promptGuard.png",
       // "/assets/placeholders/project-placeholder.svg",
       // "/assets/placeholders/project-placeholder.svg",
     ],
@@ -341,30 +342,32 @@ export const achievements = [
 // Events and workshops attended, shown under Highlights. "image" is the
 // participation certificate. These are sample placeholders — replace them.
 export const workshops = [
+ {
+  id: "ws-1",
+  title: "Paper presentation and coding competitions",
+  organiser: "Bannari Amman Institute of Technology (BIT)",
+  format: "Paper presentation & Technical Competitions",
+  date: "Nov 6, 2024",
+  image: "/assets/events/BIT_Paper_Presentation_certificate.jpeg",
+},
   {
-    id: "ws-1",
-    title: "Hands-on Workshop on Modern React Patterns",
-    organiser: "Sample Institute of Technology · Dept. of Computer Science",
-    format: "2-Day Workshop",
-    date: "Aug 12–13, 2025",
-    image: "/assets/placeholders/certificate-placeholder.svg",
-  },
+  id: "ws-2",
+  title: "BuildX'26 Buildathon",
+  organiser: "BuildX'26",
+  format: "6-Week Buildathon",
+  date: "Jun 1 – Jul 13, 2026",
+  description: "Explored AI tools and learned to leverage AI-powered technologies for rapid prototyping, development, and problem-solving.",
+  image: "/assets/placeholders/certificate-placeholder.svg",
+},
   {
-    id: "ws-2",
-    title: "Cloud Fundamentals Bootcamp",
-    organiser: "Sample Tech Community · Bengaluru Chapter",
-    format: "1-Day Bootcamp",
-    date: "Apr 6, 2025",
-    image: "/assets/placeholders/certificate-placeholder.svg",
-  },
-  {
-    id: "ws-3",
-    title: "Open Source Contribution Sprint",
-    organiser: "Sample Academy · Student Developer Program",
-    format: "Weekend Program",
-    date: "Nov 23–24, 2024",
-    image: "/assets/placeholders/certificate-placeholder.svg",
-  },
+  id: "ws-3",
+  title: "Hands-on Workshop on LangChain and AI",
+  organiser: "PSG Institute of Technology and Applied Research",
+  format: "2-Day Workshop",
+  date: "Mar 15–16, 2024",
+  description: "Gained hands-on exposure to LangChain and its applications in building LLM-powered applications and AI workflows.",
+  image: "/assets/placeholders/certificate-placeholder.svg",
+},
 ];
 
 export const tracking = {
