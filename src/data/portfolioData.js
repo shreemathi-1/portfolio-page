@@ -357,7 +357,7 @@ export const workshops = [
   format: "6-Week Buildathon",
   date: "Jun 1 – Jul 13, 2026",
   description: "Explored AI tools and learned to leverage AI-powered technologies for rapid prototyping, development, and problem-solving.",
-  image: "/assets/placeholders/certificate-placeholder.svg",
+  image: "/assets/events/BuildX_buildathon_certificate.jpeg",
 },
   {
   id: "ws-3",
@@ -366,7 +366,7 @@ export const workshops = [
   format: "2-Day Workshop",
   date: "Mar 15–16, 2024",
   description: "Gained hands-on exposure to LangChain and its applications in building LLM-powered applications and AI workflows.",
-  image: "/assets/placeholders/certificate-placeholder.svg",
+  image: "/assets/events/langchain-workshop.png",
 },
 ];
 
