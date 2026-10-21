@@ -10,10 +10,10 @@ export const profile = {
   role: "Software Developer — Fresher",
   // Shown as the dot-separated line above the name in the hero.
   roles: [
+    "AI developer",
     "Software Developer",
-    "Full-Stack Enthusiast",
+    "MERN stack developer",
     "Web Developer",
-    "AI Enthusiast",
   ],
   tagline:
     "I build clean, functional web applications and back every claim on this page with a screenshot, a certificate, or a working link.",
@@ -52,7 +52,7 @@ export const coreExpertise = [
 // The three areas the About section highlights, each with an icon tile.
 export const focusAreas = [
   { icon: "🧩", label: "Full-Stack Web Development" },
-  { icon: "⚡", label: "AI Enthusiast" },
+  { icon: "⚡", label: "AI developer" },
   { icon: "☁️", label: "Mobile application development" },
 ];
 
@@ -80,10 +80,29 @@ export const education = [
 // nothing is uploaded yet.
 export const skillGroups = [
   {
+     {
+    category: "🤖 AI Skills",
+    skills: [
+      { name: "RAG", proof: "/assets/projects/rag-bot-1.png" },
+      { name: "Agents & skills", proof: "assets/skills/agents and skills.png" },
+      { name: "Agent harness", proof: "assets/skills/harness.png"},
+      { name: "Agent-based development", proof: "assets/skills/agents and skills.png" },
+      { name: "Claude code", proof: "assets/skills/claude-code.png"}
+    ],
+  },
     category: "💻 Programming Languages",
     skills: [
       { name: "Java", proof: "assets/skills/java.png" },
       { name: "Python", proof:"assets/skills/python.png"   },
+    ],
+  },
+   {
+    category: "📱Mobile development",
+    skills: [
+      { name: "React Native", proof: null  },   
+        { name: "Flutter", proof: null },   
+       { name: "Android Studio", proof: null },
+       { name: "XCode", proof: null },
     ],
   },
   {
@@ -95,14 +114,17 @@ export const skillGroups = [
         name: "React",
         proof: "assets/skills/react.png",
       },
-      // { name: "Redux", proof: null },
+       { name: "TypeScript", proof: null },   
+        { name: "Bootstrap", proof: null },   
+       { name: "Tailwind CSS", proof: null },
     ],
   },
   {
     category: "⚙️ Backend & APIs",
     skills: [
-      { name: "SpringBoot", proof: "assets/skills/springboot.png" },
       { name: "Node.js / Express", proof: "assets/skills/nodejs.png" },
+       { name: "FastAPI", proof: "assets/skills/nodejs.png" },
+      { name: "SpringBoot", proof: "assets/skills/springboot.png" },    
       { name: "REST APIs", proof: "assets/skills/springboot.png" },
     ],
   },
@@ -111,6 +133,8 @@ export const skillGroups = [
     skills: [
       { name: "MySQL", proof: "assets/skills/sql-1.png"},
       { name: "PostgreSQL", proof: "assets/skills/postgres.png" },
+       { name: "MongoDB" },
+      //  , proof: "assets/skills/postgres.png"
     //  {
     //     name: "AWS (basics)",
     //     proof: "/assets/placeholders/certificate-placeholder.svg",
@@ -124,20 +148,11 @@ export const skillGroups = [
       { name: "Figma", proof: "assets/skills/figma.png" },
       { name: "PostMan", proof: "assets/skills/postman.png"},
       { name: "Vercel", proof: "assets/skills/vercel.png" },
-      // { name: "Render", proof: null },
-      { name: "Docker (basics)", proof: "assets/skills/docker.png" },
+       { name: "Render", proof: null },
+      { name: "Docker ", proof: "assets/skills/docker.png" },
     ],
   },
-  {
-    category: "🤖 AI Skills",
-    skills: [
-      { name: "RAG", proof: "/assets/projects/rag-bot-1.png" },
-      { name: "Agents & skills", proof: "assets/skills/agents and skills.png" },
-      { name: "Agent harness", proof: "assets/skills/harness.png"},
-      { name: "Agent-based development", proof: "assets/skills/agents and skills.png" },
-      { name: "Claude code", proof: "assets/skills/claude-code.png"}
-    ],
-  },
+ 
 ];
 
 // Each project can include a gallery of screenshots and/or a demo video.
