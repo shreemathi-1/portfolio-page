@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import SectionReveal from './SectionReveal'
-import Seal from './Seal'
+import { hasValue } from '../utils/hasValue'
 import { internships } from '../data/portfolioData'
 import { FiX, FiFileText } from 'react-icons/fi'
 
@@ -45,9 +45,11 @@ export default function Internships() {
               </div>
 
               <div className="project-links">
-                <button className="btn btn-outline btn-sm" onClick={() => setCert(it)}>
-                  <FiFileText /> View Internship Certificate
-                </button>
+                {hasValue(it.certificate) && (
+                  <button className="btn btn-outline btn-sm" onClick={() => setCert(it)}>
+                    <FiFileText /> View Internship Certificate
+                  </button>
+                )}
               
               </div>
             </SectionReveal>
@@ -58,12 +60,9 @@ export default function Internships() {
       {cert && (
         <div className="lightbox" role="dialog" aria-modal="true" onClick={() => setCert(null)}>
           <div className="lightbox-inner" onClick={(e) => e.stopPropagation()}>
-            <div className="lightbox-head">
-              <Seal>{cert.company} — Certificate</Seal>
-              <button className="lightbox-close" onClick={() => setCert(null)} aria-label="Close">
+            <button className="lightbox-close" onClick={() => setCert(null)} aria-label="Close">
                 <FiX />
               </button>
-            </div>
             <img src={cert.certificate} alt={`${cert.company} internship certificate`} />
           </div>
         </div>

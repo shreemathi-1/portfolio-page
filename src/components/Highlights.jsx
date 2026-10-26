@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FiX } from 'react-icons/fi'
 import SectionReveal from './SectionReveal'
 import Seal from './Seal'
-import { achievements, tracking } from '../data/portfolioData'
+import { achievements, tracking, profile } from '../data/portfolioData'
 
 export default function Highlights() {
   const [open, setOpen] = useState(null)
@@ -44,11 +44,13 @@ export default function Highlights() {
               <h3>GitHub contributions</h3>
               <Seal>Live</Seal>
             </div>
+            <a className="tracking-link" href={profile.socials.github} target="_blank" rel="noreferrer" aria-label="Open GitHub profile">
             <img
               src={`https://ghchart.rshah.org/1C3D6E/${gh}`}
               alt={`GitHub contribution heatmap for ${gh}`}
               loading="lazy"
             />
+            </a>
             <p className="tracking-note">github.com/{gh}</p>
           </SectionReveal>
 
@@ -57,11 +59,13 @@ export default function Highlights() {
               <h3>LeetCode activity</h3>
               <Seal>Live</Seal>
             </div>
+            <a className="tracking-link" href={profile.socials.leetcode} target="_blank" rel="noreferrer" aria-label="Open LeetCode profile">
             <img
               src={`https://leetcard.jacoblin.cool/${lc}?theme=light&font=DM%20Sans&ext=heatmap`}
               alt={`LeetCode activity heatmap for ${lc}`}
               loading="lazy"
             />
+            </a>
             <p className="tracking-note">leetcode.com/{lc}</p>
           </SectionReveal>
         </div>

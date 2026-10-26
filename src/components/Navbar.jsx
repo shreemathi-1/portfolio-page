@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { profile } from '../data/portfolioData'
 
 const LINKS = [
@@ -13,6 +13,18 @@ const LINKS = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const [active, setActive] = useState('')
+
+  // Scrollspy: highlight the link whose section crosses the middle of the viewport.
+  useEffect(() => {
+    const sections = LINKS.map((l) => document.querySelector(l.href)).filter(Boolean)
+    const io = new IntersectionObserver(
+      (entries) => entries.forEach((e) => e.isIntersecting && setActive(`#${e.target.id}`)),
+      { rootMargin: '-45% 0px -50% 0px' }
+    )
+    sections.forEach((s) => io.observe(s))
+    return () => io.disconnect()
+  }, [])
 
   return (
     <header className="navbar">
@@ -22,7 +34,12 @@ export default function Navbar() {
         </a>
         <nav className={`nav-links ${open ? 'open' : ''}`}>
           {LINKS.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)}>
+            <a
+              key={l.href}
+              href={l.href}
+              className={active === l.href ? 'active' : ''}
+              onClick={() => { setActive(l.href); setOpen(false) }}
+            >
               {l.label}
             </a>
           ))}

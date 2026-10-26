@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import SectionReveal from './SectionReveal'
 import { skillGroups } from '../data/portfolioData'
+import { hasValue } from '../utils/hasValue'
 import { FiX, FiEye } from 'react-icons/fi'
 
 // Proof files are plain paths, so the extension decides how to render them.
@@ -27,6 +28,7 @@ export default function Skills() {
                 {group.skills.map((s) => (
                   <div className="skill-line" key={s.name}>
                     <span className="skill-line-name">{s.name}</span>
+                    {hasValue(s.proof) && (
                     <button
                       type="button"
                       className="poc-btn"
@@ -35,6 +37,7 @@ export default function Skills() {
                     >
                       <FiEye aria-hidden="true" /> View POC
                     </button>
+                    )}
                   </div>
                 ))}
               </div>
@@ -49,13 +52,7 @@ export default function Skills() {
             <button className="lightbox-close" onClick={() => setProof(null)} aria-label="Close">
                 <FiX />
               </button>
-            {!proof.src ? (
-              <p className="lightbox-empty">
-                No proof uploaded for {proof.name} yet. Add a screenshot, certificate or short
-                clip to <code>/public/assets</code> and point this skill at it in{' '}
-                <code>portfolioData.js</code>.
-              </p>
-            ) : isVideo(proof.src) ? (
+            {isVideo(proof.src) ? (
               <video src={proof.src} controls autoPlay playsInline />
             ) : (
               <img src={proof.src} alt={`Proof for ${proof.name}`} />

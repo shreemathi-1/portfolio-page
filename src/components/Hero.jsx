@@ -46,19 +46,17 @@ export default function Hero() {
             >
               <FaLinkedin /> LinkedIn ↗
             </a>
+            <a href={profile.socials.github} target="_blank" rel="noreferrer" className="btn btn-outline">
+              <FaGithub /> GitHub ↗
+            </a>
+            <a href={profile.socials.leetcode} target="_blank" rel="noreferrer" className="btn btn-outline">
+              <SiLeetcode /> LeetCode ↗
+            </a>
             <a href="#projects" className="btn btn-outline">
               <FiArrowRight /> View Projects
             </a>
           </div>
 
-          <div className="hero-meta">
-            <a href={profile.socials.github} target="_blank" rel="noreferrer">
-              <FaGithub /> {profile.socials.github.replace('https://', '')}
-            </a>
-            <a href={profile.socials.leetcode} target="_blank" rel="noreferrer">
-              <SiLeetcode /> {profile.socials.leetcode.replace('https://', '')}
-            </a>
-          </div>
         </motion.div>
 
         <motion.div

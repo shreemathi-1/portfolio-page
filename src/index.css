@@ -116,7 +116,13 @@ button{font-family:inherit;cursor:pointer;}
   font-size:12.5px;color:var(--ink-soft);font-weight:500;position:relative;padding:4px 0;
   text-transform:uppercase;letter-spacing:.06em;
 }
-.nav-links a:hover{color:var(--ink);}
+.nav-links a:hover{color:var(--accent);}
+.nav-links a:not(.nav-cta)::after{
+  content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--accent);
+  transform:scaleX(0);transform-origin:left;transition:transform .2s ease;
+}
+.nav-links a.active{color:var(--accent);}
+.nav-links a.active::after{transform:scaleX(1);}
 /* Matches ".nav-links a" specificity so the pill's padding actually applies. */
 .nav-links a.nav-cta{
   background:var(--ink);color:#fff;padding:9px 18px;border-radius:7px;
@@ -258,6 +264,12 @@ button{font-family:inherit;cursor:pointer;}
 .gallery-dots{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:6px;}
 .gallery-dots button{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.55);border:none;padding:0;}
 .gallery-dots button.active{background:#fff;}
+.gallery-zoom{position:absolute;inset:0;width:100%;background:none;border:none;padding:0;cursor:zoom-in;}
+.gallery-zoom img{width:100%;height:100%;object-fit:cover;display:block;min-height:260px;}
+.gallery-expand{position:absolute;top:10px;right:10px;background:rgba(23,27,38,.55);color:#fff;border:none;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;}
+.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.92);border:1px solid var(--border);color:var(--ink);width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:1;}
+.lightbox-nav.prev{left:10px;}
+.lightbox-nav.next{right:10px;}
 .gallery-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(23,27,38,.55);color:#fff;border:none;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;}
 .gallery-nav.prev{left:10px;}
 .gallery-nav.next{right:10px;}
@@ -285,7 +297,7 @@ button{font-family:inherit;cursor:pointer;}
 }
 .cert-tab:hover{color:var(--ink);}
 .cert-tab.active{color:var(--accent);border-bottom-color:var(--accent);}
-.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.cert-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
 .cert-card{overflow:hidden;}
 /* The whole card is the control that opens the full certificate. */
 .cert-button{
@@ -302,13 +314,13 @@ button{font-family:inherit;cursor:pointer;}
 }
 .cert-button:hover .cert-thumb img{transform:scale(1.03);}
 .cert-button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
-.cert-body{display:flex;flex-direction:column;gap:8px;padding:20px 22px 22px;}
+.cert-body{display:flex;flex-direction:column;gap:6px;padding:12px 12px 14px;}
 .cert-issuer{
-  font-family:'DM Sans',sans-serif;font-size:11.5px;font-weight:600;
-  letter-spacing:.08em;text-transform:uppercase;color:var(--accent);
+  font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--accent);
 }
-.cert-title{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;line-height:1.35;}
-.cert-date{font-size:14px;color:var(--muted);}
+.cert-title{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:600;line-height:1.35;}
+.cert-date{font-size:12px;color:var(--muted);}
 
 /* ---------- Experience timeline ---------- */
 .timeline{position:relative;padding-left:34px;}
@@ -353,6 +365,7 @@ button{font-family:inherit;cursor:pointer;}
 /* The two services return different aspect ratios (GitHub 663x104,
    LeetCode 500x320), so both get an identical box and are contained
    inside it — same footprint, neither one stretched. */
+.tracking-link{display:block;cursor:pointer;}
 .tracking-card img{
   width:100%;height:210px;object-fit:contain;object-position:center;
   border-radius:8px;background:var(--paper);padding:10px;
@@ -427,6 +440,9 @@ button{font-family:inherit;cursor:pointer;}
 .footer-links a:hover{color:var(--on-dark);}
 
 /* ---------- Responsive ---------- */
+@media (max-width:1180px){
+  .cert-grid{grid-template-columns:repeat(4,1fr);}
+}
 @media (max-width:900px){
   .hero{padding:104px 0 64px;}
   .hero-grid{grid-template-columns:1fr;gap:32px;text-align:center;}
@@ -443,14 +459,13 @@ button{font-family:inherit;cursor:pointer;}
   .achievements-grid{grid-template-columns:1fr 1fr;}
 }
 @media (max-width:600px){
-  .skills-cards{grid-template-columns:repeat(3,1fr);gap:10px;}
-  .skill-card{padding:14px 10px;}
+  .skills-cards{grid-template-columns:repeat(2,1fr);gap:12px;}
+  .skill-card{padding:16px 12px;}
   .skill-card-icon{font-size:20px;margin-bottom:10px;}
   .skill-card-title{font-size:10.5px;letter-spacing:.04em;margin-bottom:10px;}
   .skill-line{flex-direction:column;align-items:flex-start;gap:5px;padding:8px 0;}
-  .skill-line-name{font-size:12px;line-height:1.3;}
-  .poc-btn{font-size:9.5px;padding:3px 7px;gap:3px;}
-  .poc-btn svg{width:10px;height:10px;}
+  .skill-line-name{font-size:13px;line-height:1.3;}
+  .poc-btn{font-size:10.5px;padding:4px 9px;gap:4px;}
   .cert-grid{grid-template-columns:repeat(3,1fr);gap:10px;}
   .cert-body{padding:8px 8px 10px;gap:4px;}
   .cert-issuer{font-size:9px;letter-spacing:.04em;}
