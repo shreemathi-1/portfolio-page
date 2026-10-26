@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import SectionReveal from './SectionReveal'
-import Seal from './Seal'
 import { skillGroups } from '../data/portfolioData'
 import { FiX, FiEye } from 'react-icons/fi'
 
@@ -47,12 +46,9 @@ export default function Skills() {
       {proof && (
         <div className="lightbox" role="dialog" aria-modal="true" onClick={() => setProof(null)}>
           <div className="lightbox-inner" onClick={(e) => e.stopPropagation()}>
-            <div className="lightbox-head">
-              <Seal>Proof — {proof.name}</Seal>
-              <button className="lightbox-close" onClick={() => setProof(null)} aria-label="Close">
+            <button className="lightbox-close" onClick={() => setProof(null)} aria-label="Close">
                 <FiX />
               </button>
-            </div>
             {!proof.src ? (
               <p className="lightbox-empty">
                 No proof uploaded for {proof.name} yet. Add a screenshot, certificate or short

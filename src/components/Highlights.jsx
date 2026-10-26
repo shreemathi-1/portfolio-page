@@ -1,9 +1,8 @@
 import { useState } from 'react'
+import { FiX } from 'react-icons/fi'
 import SectionReveal from './SectionReveal'
 import Seal from './Seal'
-import CredentialCard from './CredentialCard'
-import { achievements, workshops, tracking } from '../data/portfolioData'
-import { FiX } from 'react-icons/fi'
+import { achievements, tracking } from '../data/portfolioData'
 
 export default function Highlights() {
   const [open, setOpen] = useState(null)
@@ -20,9 +19,14 @@ export default function Highlights() {
         <div className="achievements-grid">
           {achievements.map((a) => (
             <SectionReveal key={a.id} className="card achievement-card">
-              <div className="achievement-photo">
+              <button
+                type="button"
+                className="achievement-photo"
+                onClick={() => setOpen(a)}
+                aria-label={`View ${a.title} full size`}
+              >
                 <img src={a.photo} alt={a.title} />
-              </div>
+              </button>
               <div className="achievement-body">
                 <span className="achievement-year">{a.year}</span>
                 <h3>{a.title}</h3>
@@ -32,23 +36,7 @@ export default function Highlights() {
           ))}
         </div>
 
-        <SectionReveal className="subsection-label">Events &amp; Workshops Attended</SectionReveal>
-
-        <div className="cert-grid">
-          {workshops.map((w) => (
-            <CredentialCard
-              key={w.id}
-              image={w.image}
-              eyebrow={w.organiser}
-              title={w.title}
-              meta={`${w.format} · ${w.date}`}
-              alt={`${w.title} participation certificate`}
-              onOpen={() => setOpen(w)}
-            />
-          ))}
-        </div>
-
-        <SectionReveal className="subsection-label">Coding Activity</SectionReveal>
+        <SectionReveal className="subsection-label">Consistent Contributions</SectionReveal>
 
         <div className="tracking-grid">
           <SectionReveal className="card tracking-card">
@@ -79,16 +67,14 @@ export default function Highlights() {
         </div>
       </div>
 
+
       {open && (
         <div className="lightbox" role="dialog" aria-modal="true" onClick={() => setOpen(null)}>
           <div className="lightbox-inner" onClick={(e) => e.stopPropagation()}>
-            <div className="lightbox-head">
-              <Seal>{open.title}</Seal>
-              <button className="lightbox-close" onClick={() => setOpen(null)} aria-label="Close">
-                <FiX />
-              </button>
-            </div>
-            <img src={open.image} alt={`${open.title} participation certificate`} />
+            <button className="lightbox-close" onClick={() => setOpen(null)} aria-label="Close">
+              <FiX />
+            </button>
+            <img src={open.photo} alt={open.title} />
           </div>
         </div>
       )}

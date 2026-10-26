@@ -277,6 +277,14 @@ button{font-family:inherit;cursor:pointer;}
 }
 
 /* ---------- Certifications ---------- */
+.cert-tabs{display:flex;gap:28px;border-bottom:1px solid var(--border);margin-bottom:32px;}
+.cert-tab{
+  background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;
+  padding:10px 2px;font-family:'DM Sans',sans-serif;font-size:14.5px;font-weight:600;
+  color:var(--muted);transition:color .15s ease,border-color .15s ease;
+}
+.cert-tab:hover{color:var(--ink);}
+.cert-tab.active{color:var(--accent);border-bottom-color:var(--accent);}
 .cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .cert-card{overflow:hidden;}
 /* The whole card is the control that opens the full certificate. */
@@ -330,7 +338,7 @@ button{font-family:inherit;cursor:pointer;}
 
 .achievements-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .achievement-card{overflow:hidden;}
-.achievement-photo{aspect-ratio:5/4;background:#F2EEE6;}
+.achievement-photo{display:block;width:100%;padding:0;border:none;cursor:zoom-in;aspect-ratio:5/4;background:#F2EEE6;}
 .achievement-photo img{width:100%;height:100%;object-fit:cover;}
 .achievement-body{padding:18px 20px;}
 .achievement-year{font-family:'DM Sans',sans-serif;font-size:11.5px;color:var(--muted);}
@@ -370,9 +378,12 @@ button{font-family:inherit;cursor:pointer;}
   position:fixed;inset:0;background:rgba(23,27,38,.62);backdrop-filter:blur(2px);
   display:flex;align-items:center;justify-content:center;z-index:100;padding:24px;
 }
-.lightbox-inner{background:var(--paper-alt);border-radius:var(--radius);max-width:640px;width:100%;overflow:hidden;}
-.lightbox-head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--border);}
-.lightbox-close{background:none;border:none;font-size:18px;color:var(--muted);}
+.lightbox-inner{position:relative;background:var(--paper-alt);border-radius:var(--radius);max-width:640px;width:100%;max-height:100%;overflow:auto;}
+.lightbox-close{
+  position:absolute;top:10px;right:10px;z-index:1;width:34px;height:34px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:18px;
+  background:rgba(255,255,255,.92);border:1px solid var(--border);color:var(--ink);box-shadow:var(--shadow);
+}
 .lightbox-inner img,
 .lightbox-inner video{width:100%;display:block;background:#000;}
 .lightbox-empty{padding:22px;font-size:14.5px;color:var(--ink-soft);}
@@ -417,8 +428,13 @@ button{font-family:inherit;cursor:pointer;}
 
 /* ---------- Responsive ---------- */
 @media (max-width:900px){
-  .hero-grid{grid-template-columns:1fr;}
-  .hero-photo-wrap{max-width:320px;margin:0 auto;}
+  .hero{padding:104px 0 64px;}
+  .hero-grid{grid-template-columns:1fr;gap:32px;text-align:center;}
+  .hero-photo-wrap{order:-1;max-width:260px;margin:0 auto;}
+  .hero-roles{justify-content:center;}
+  .hero h1{font-size:clamp(40px,11vw,56px);}
+  .hero-tagline{margin-left:auto;margin-right:auto;}
+  .hero-chips,.hero-actions,.hero-meta{justify-content:center;}
   .project-card-inner{grid-template-columns:1fr;}
   .about-grid{grid-template-columns:1fr;gap:44px;}
   .skills-cards{grid-template-columns:repeat(2,1fr);}
@@ -427,8 +443,20 @@ button{font-family:inherit;cursor:pointer;}
   .achievements-grid{grid-template-columns:1fr 1fr;}
 }
 @media (max-width:600px){
-  .skills-cards{grid-template-columns:1fr;}
-  .cert-grid{grid-template-columns:1fr;}
+  .skills-cards{grid-template-columns:repeat(3,1fr);gap:10px;}
+  .skill-card{padding:14px 10px;}
+  .skill-card-icon{font-size:20px;margin-bottom:10px;}
+  .skill-card-title{font-size:10.5px;letter-spacing:.04em;margin-bottom:10px;}
+  .skill-line{flex-direction:column;align-items:flex-start;gap:5px;padding:8px 0;}
+  .skill-line-name{font-size:12px;line-height:1.3;}
+  .poc-btn{font-size:9.5px;padding:3px 7px;gap:3px;}
+  .poc-btn svg{width:10px;height:10px;}
+  .cert-grid{grid-template-columns:repeat(3,1fr);gap:10px;}
+  .cert-body{padding:8px 8px 10px;gap:4px;}
+  .cert-issuer{font-size:9px;letter-spacing:.04em;}
+  .cert-title{font-size:12.5px;line-height:1.25;}
+  .cert-date{font-size:10.5px;}
+  .cert-tabs{gap:20px;}
   .timeline{padding-left:26px;}
   .timeline-marker{left:-24px;width:13px;height:13px;}
   .stats-grid{grid-template-columns:1fr 1fr;}

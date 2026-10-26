@@ -61,14 +61,14 @@ export const education = [
   {
     id: "edu-1",
     degree: "B.E. Computer Science & Engineering(Cyber Security)",
-    institution: "Dr.NGP Institute of Technology",
+    institution: "Dr.NGP Institute of Technology, Coimbatore",
     years: "2023–2027",
     score: "CGPA: 8.71",
   },
   {
     id: "edu-2",
     degree: "Higher Secondary Certificate (HSC)",
-    institution: "Lourde Matha Convent Matric Higher Secondary School",
+    institution: "Lourde Matha Convent Matric Higher Secondary School, Tiruppur",
     years: "2022–2023",
     score: "82.5%",
   },
@@ -80,7 +80,6 @@ export const education = [
 // nothing is uploaded yet.
 export const skillGroups = [
   {
-     {
     category: "🤖 AI Skills",
     skills: [
       { name: "RAG", proof: "/assets/projects/rag-bot-1.png" },
@@ -90,6 +89,7 @@ export const skillGroups = [
       { name: "Claude code", proof: "assets/skills/claude-code.png"}
     ],
   },
+  {
     category: "💻 Programming Languages",
     skills: [
       { name: "Java", proof: "assets/skills/java.png" },
@@ -317,6 +317,90 @@ export const certifications = [
     date: "April 2024",
     image: "/assets/certifications/frontend_GL.jpg",
   },
+  {
+    id: "cert-6",
+    title: "Introduction to Artificial Intelligence",
+    issuer: "Great Learning",
+    date: "March 2024",
+    image: "/assets/certifications/intro_AI_GL_certificate.png",
+  },
+  {
+    id: "cert-7",
+    title: "National Seminar on In-Vehicle Intrusion Detection System",
+    issuer: "Dr. N.G.P. Institute of Technology (CSIR sponsored)",
+    date: "April 2024",
+    image: "/assets/certifications/CSIR_IVIDS_seminar_certificate.jpeg",
+  },
+  {
+    id: "cert-8",
+    title: "Introduction to MongoDB",
+    issuer: "MongoDB",
+    date: "August 2024",
+    image: "/assets/certifications/mongodb_intro_certificate.png",
+  },
+  {
+    id: "cert-9",
+    title: "Getting Started with MongoDB Atlas",
+    issuer: "MongoDB",
+    date: "August 2024",
+    image: "/assets/certifications/mongodb_atlas_certificate.png",
+  },
+  {
+    id: "cert-10",
+    title: "Connecting to a MongoDB Database",
+    issuer: "MongoDB",
+    date: "August 2024",
+    image: "/assets/certifications/mongodb_connecting_certificate.png",
+  },
+  {
+    id: "cert-11",
+    title: "MongoDB Basics - ICT Academy Learnathon",
+    issuer: "MongoDB",
+    date: "August 2024",
+    image: "/assets/certifications/mongodb_basics_ICT_certificate.png",
+  },
+  {
+    id: "cert-12",
+    title: "Introduction to AI and Vector Search",
+    issuer: "MongoDB",
+    date: "August 2024",
+    image: "/assets/certifications/mongodb_vector_search_certificate.png",
+  },
+  {
+    id: "cert-13",
+    title: "Generate code with Azure OpenAI Service",
+    issuer: "Microsoft",
+    date: "September 2024",
+    image: "/assets/certifications/ms_azure_openai_certificate.png",
+  },
+  {
+    id: "cert-14",
+    title: "Explore generative AI with Copilot in Bing",
+    issuer: "Microsoft",
+    date: "September 2024",
+    image: "/assets/certifications/ms_copilot_bing_certificate.png",
+  },
+  {
+    id: "cert-15",
+    title: "Fundamentals of Generative AI",
+    issuer: "Microsoft",
+    date: "September 2024",
+    image: "/assets/certifications/ms_generative_ai_certificate.png",
+  },
+  {
+    id: "cert-16",
+    title: "Privacy and Security in Online Social Media",
+    issuer: "NPTEL (IIIT Hyderabad / IIT Madras)",
+    date: "Jan - Apr 2025",
+    image: "/assets/certifications/nptel_privacy_security_certificate.png",
+  },
+  {
+    id: "cert-17",
+    title: "Deep Learning Onramp",
+    issuer: "MathWorks",
+    date: "September 2024",
+    image: "/assets/certifications/mathworks_deep_learning_certificate.png",
+  },
   // {
   //   id: "cert-6",
   //   title: "SQL for Data Analysis",
@@ -382,6 +466,30 @@ export const workshops = [
   date: "Mar 15–16, 2024",
   description: "Gained hands-on exposure to LangChain and its applications in building LLM-powered applications and AI workflows.",
   image: "/assets/events/langchain-workshop.png",
+},
+  {
+  id: "ws-4",
+  title: "Bharatiya Antariksh Hackathon 2026",
+  organiser: "ISRO, powered by Hack2skill",
+  format: "National Hackathon (idea submission)",
+  date: "2026",
+  image: "/assets/events/ISRO_antariksh_hackathon_certificate.jpg",
+},
+  {
+  id: "ws-5",
+  title: "INTELLINA 2K25 Hackathon",
+  organiser: "Coimbatore Institute of Technology (Dept. of AI&DS)",
+  format: "Hackathon",
+  date: "Apr 4, 2025",
+  image: "/assets/events/intellina_hackathon_certificate.png",
+},
+  {
+  id: "ws-6",
+  title: "PINNACLE 2K24 Paper Presentation",
+  organiser: "Coimbatore Institute of Technology (ECE Association, IETE & IE(I))",
+  format: "National Level Technical Symposium",
+  date: "Mar 22, 2024",
+  image: "/assets/events/CIT_pinnacle_paper_presentation_certificate.png",
 },
 ];
 
