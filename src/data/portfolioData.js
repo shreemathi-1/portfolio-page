@@ -228,7 +228,7 @@ export const projects = [
     github: "https://github.com/shreemathi-1/SDLC-agents",
     live: "",
     video: "",
-    screenshots: ["/Users/shreemathi/Documents/portfolio_page/public/assets/projects/sdlc-project.png"],
+    screenshots: ["/assets/projects/sdlc-project.png"],
   },
 ];
 
