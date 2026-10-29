@@ -43,8 +43,8 @@ export const coreExpertise = [
   { name: "React", tone: "accent" },
   { name: "Node.js", tone: "accent" },
   { name: "Python", tone: "highlight" },
-  { name: "Tailwind CSS", tone: "ink" },
-  { name: "React Native", tone: "ink" },
+  // { name: "Tailwind CSS", tone: "ink" },
+  // { name: "React Native", tone: "ink" },
   { name: "Git & GitHub", tone: "muted" },
   { name: "REST APIs", tone: "highlight" },
 ];
@@ -53,7 +53,7 @@ export const coreExpertise = [
 export const focusAreas = [
   { icon: "🧩", label: "Full-Stack Web Development" },
   { icon: "⚡", label: "AI developer" },
-  { icon: "☁️", label: "Mobile application development" },
+  // { icon: "☁️", label: "Mobile application development" },
 ];
 
 // Shown as the Education column beside the About text.
@@ -96,15 +96,15 @@ export const skillGroups = [
       { name: "Python", proof:"assets/skills/python.png"   },
     ],
   },
-   {
-    category: "📱Mobile development",
-    skills: [
-      { name: "React Native", proof: null  },   
-        { name: "Flutter", proof: null },   
-       { name: "Android Studio", proof: null },
-       { name: "XCode", proof: null },
-    ],
-  },
+  //  {
+  //   category: "📱Mobile development",
+  //   skills: [
+  //     { name: "React Native", proof: null  },   
+  //       { name: "Flutter", proof: null },   
+  //      { name: "Android Studio", proof: null },
+  //      { name: "XCode", proof: null },
+  //   ],
+  // },
   {
     category: "🎨 Frontend",
     skills: [
@@ -148,8 +148,8 @@ export const skillGroups = [
       { name: "Figma", proof: "assets/skills/figma.png" },
       { name: "PostMan", proof: "assets/skills/postman.png"},
       { name: "Vercel", proof: "assets/skills/vercel.png" },
-       { name: "Render", proof: null },
-      { name: "Docker ", proof: "assets/skills/docker.png" },
+      //  { name: "Render", proof: null },
+      // { name: "Docker ", proof: "assets/skills/docker.png" },
     ],
   },
  
@@ -171,7 +171,7 @@ export const projects = [
     ],
     tech: ["React", " Node.js", "Express.js", "PostgresSQL"],
 
-    github: "",
+    github: "https://github.com/shreemathi-1/promptGuard",
     // live: "",
     video: "",
     screenshots: [
@@ -192,7 +192,7 @@ export const projects = [
     ],
     tech: ["React", "NodeJS", "ExpressJS", "Gemini API", "GitHub API", "Vercel"],
 
-    github: "",
+    github: "https://github.com/shreemathi-1/repoIntelligence",
     // live: "https://spendwise-demo.onrender.com",
     video: "",
     screenshots: [
@@ -213,23 +213,23 @@ export const projects = [
 "synthesis, along with a REST API backend and an embeddable chat widget.",
      ],
     tech: ["Python", "FastAPI", "ChromaDB", "Sentence-Transformers", "Groq API"],
-    github: "",
+    github: "https://github.com/shreemathi-1/Website-Integrated-RAG-Based-College-Q-A-Chatbot",
     // live: "https://recipe-radar-demo.vercel.app",
     video: "",
     screenshots: ["/assets/projects/rag-bot-1.png"],
   },
-  // {
-  //   id: "taskflow-cli",
-  //   name: "TaskFlow CLI",
-  //   tagline: "A command-line task manager with tags, due dates and reminders.",
-  //   description:
-  //     "A Python CLI tool storing tasks in a local SQLite file, with fuzzy search and colour-coded priority levels. Packaged and published to TestPyPI as a learning exercise.",
-  //   tech: ["Python", "SQLite", "Click"],
-  //   github: "https://github.com/shreemathi/taskflow-cli",
-  //   live: "",
-  //   video: "",
-  //   screenshots: ["/assets/placeholders/project-placeholder.svg"],
-  // },
+  {
+    id: "SDLC",
+    name: "Multi-Agent SDLC Automation System for Web and Mobile Development ",
+    tagline: "A command-line task manager with tags, due dates and reminders.",
+    description:
+      "Built a multi-agent harness on custom agents and Agent Skills that automates the software development lifecycle (SDLC), from user stories through requirements, planning, UI/UX Designing, architecture, developing, testing, reviewing and releasing products that can be used in any project folders in GitHub Copilot, claude code or any IDEs.",
+    tech: ["Agent Skills", "multi-agent orchestration", "GitHub Copilot Custom Agents", "Claude Code"],
+    github: "https://github.com/shreemathi-1/SDLC-agents",
+    live: "",
+    video: "",
+    screenshots: ["/Users/shreemathi/Documents/portfolio_page/public/assets/projects/sdlc-project.png"],
+  },
 ];
 
 // Rendered as the Experience timeline. "highlights" are the arrow bullets;
