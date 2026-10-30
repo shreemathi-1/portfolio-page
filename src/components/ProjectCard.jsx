@@ -37,7 +37,7 @@ export default function ProjectCard({ project }) {
             </>
           ) : (
             <button type="button" className="gallery-zoom" onClick={() => setZoom(true)} aria-label="View screenshot full size">
-              <img src={current?.src} alt={`${project.name} screenshot ${idx + 1}`} />
+              <img src={current?.src} alt={`${project.name} screenshot ${idx + 1}`} loading="lazy" decoding="async" />
             </button>
           )}
           {media.length > 1 && (

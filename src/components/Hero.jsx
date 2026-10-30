@@ -66,7 +66,7 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
         >
           <div className="hero-photo">
-            <img src={profile.photo} alt={profile.name} />
+            <img src={profile.photo} alt={profile.name} fetchPriority="high" decoding="async" />
           </div>
         </motion.div>
       </div>

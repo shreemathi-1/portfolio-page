@@ -7,7 +7,7 @@ export default function CredentialCard({ image, eyebrow, title, meta, alt, onOpe
     <SectionReveal className="card cert-card">
       <button type="button" className="cert-button" onClick={onOpen} aria-label={`View the ${title} certificate`}>
         <span className="cert-thumb">
-          <img src={image} alt={alt || `${title} certificate`} loading="lazy" />
+          <img src={image} alt={alt || `${title} certificate`} loading="lazy" decoding="async" />
         </span>
         <span className="cert-body">
           <span className="cert-issuer">{eyebrow}</span>

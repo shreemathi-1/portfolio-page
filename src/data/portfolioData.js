@@ -18,7 +18,7 @@ export const profile = {
   tagline:
     "I build clean, functional web applications and back every claim on this page with a screenshot, a certificate, or a working link.",
   location: "Coimbatore, Tamil Nadu, India",
-  photo: "/assets/profile.png",
+  photo: "/assets/profile.webp",
   resumeFile: "/assets/shreemathi_Resume.pdf",
   about: [
     " I’m a Computer Science Engineering student specializing in Cyber Security, with a strong interest in building practical software that solves real problems.",
@@ -82,18 +82,18 @@ export const skillGroups = [
   {
     category: "🤖 AI Skills",
     skills: [
-      { name: "RAG", proof: "/assets/projects/rag-bot-1.png" },
-      { name: "Agents & skills", proof: "assets/skills/agents and skills.png" },
-      { name: "Agent harness", proof: "assets/skills/harness.png"},
-      { name: "Agent-based development", proof: "assets/skills/agents and skills.png" },
-      { name: "Claude code", proof: "assets/skills/claude-code.png"}
+      { name: "RAG", proof: "/assets/projects/rag-bot-1.webp" },
+      { name: "Agents & skills", proof: "assets/skills/agents and skills.webp" },
+      { name: "Agent harness", proof: "assets/skills/harness.webp"},
+      { name: "Agent-based development", proof: "assets/skills/agents and skills.webp" },
+      { name: "Claude code", proof: "assets/skills/claude-code.webp"}
     ],
   },
   {
     category: "💻 Programming Languages",
     skills: [
-      { name: "Java", proof: "assets/skills/java.png" },
-      { name: "Python", proof:"assets/skills/python.png"   },
+      { name: "Java", proof: "assets/skills/java.webp" },
+      { name: "Python", proof:"assets/skills/python.webp"   },
     ],
   },
   //  {
@@ -108,11 +108,11 @@ export const skillGroups = [
   {
     category: "🎨 Frontend",
     skills: [
-      { name: "HTML / CSS", proof: "assets/skills/html.png"  },
-      { name: "JavaScript", proof: "assets/skills/javascript.png"  },
+      { name: "HTML / CSS", proof: "assets/skills/html.webp"  },
+      { name: "JavaScript", proof: "assets/skills/javascript.webp"  },
       {
         name: "React",
-        proof: "assets/skills/react.png",
+        proof: "assets/skills/react.webp",
       },
        { name: "TypeScript", proof: null },   
         { name: "Bootstrap", proof: null },   
@@ -122,19 +122,19 @@ export const skillGroups = [
   {
     category: "⚙️ Backend & APIs",
     skills: [
-      { name: "Node.js / Express", proof: "assets/skills/nodejs.png" },
-       { name: "FastAPI", proof: "assets/skills/nodejs.png" },
-      { name: "SpringBoot", proof: "assets/skills/springboot.png" },    
-      { name: "REST APIs", proof: "assets/skills/springboot.png" },
+      { name: "Node.js / Express", proof: "assets/skills/nodejs.webp" },
+       { name: "FastAPI", proof: "assets/skills/nodejs.webp" },
+      { name: "SpringBoot", proof: "assets/skills/springboot.webp" },    
+      { name: "REST APIs", proof: "assets/skills/springboot.webp" },
     ],
   },
   {
     category: "🗄️ Databases & Cloud",
     skills: [
-      { name: "MySQL", proof: "assets/skills/sql-1.png"},
-      { name: "PostgreSQL", proof: "assets/skills/postgres.png" },
+      { name: "MySQL", proof: "assets/skills/sql-1.webp"},
+      { name: "PostgreSQL", proof: "assets/skills/postgres.webp" },
        { name: "MongoDB" },
-      //  , proof: "assets/skills/postgres.png"
+      //  , proof: "assets/skills/postgres.webp"
     //  {
     //     name: "AWS (basics)",
     //     proof: "/assets/placeholders/certificate-placeholder.svg",
@@ -144,12 +144,12 @@ export const skillGroups = [
   {
     category: " 🛠️ Tools & Workflow",
     skills: [
-      { name: "Git & GitHub", proof: "assets/skills/github.png" },
-      { name: "Figma", proof: "assets/skills/figma.png" },
-      { name: "PostMan", proof: "assets/skills/postman.png"},
-      { name: "Vercel", proof: "assets/skills/vercel.png" },
+      { name: "Git & GitHub", proof: "assets/skills/github.webp" },
+      { name: "Figma", proof: "assets/skills/figma.webp" },
+      { name: "PostMan", proof: "assets/skills/postman.webp"},
+      { name: "Vercel", proof: "assets/skills/vercel.webp" },
       //  { name: "Render", proof: null },
-      // { name: "Docker ", proof: "assets/skills/docker.png" },
+      // { name: "Docker ", proof: "assets/skills/docker.webp" },
     ],
   },
  
@@ -175,7 +175,7 @@ export const projects = [
     // live: "",
     video: "",
     screenshots: [
-      "/assets/projects/promptGuard.png",
+      "/assets/projects/promptGuard.webp",
       // "/assets/placeholders/project-placeholder.svg",
       // "/assets/placeholders/project-placeholder.svg",
     ],
@@ -196,7 +196,7 @@ export const projects = [
     // live: "https://spendwise-demo.onrender.com",
     video: "",
     screenshots: [
-      "/assets/projects/repomind-1.png",
+      "/assets/projects/repomind-1.webp",
       // "/assets/placeholders/project-placeholder.svg",
     ],
   },
@@ -216,7 +216,7 @@ export const projects = [
     github: "https://github.com/shreemathi-1/Website-Integrated-RAG-Based-College-Q-A-Chatbot",
     // live: "https://recipe-radar-demo.vercel.app",
     video: "",
-    screenshots: ["/assets/projects/rag-bot-1.png"],
+    screenshots: ["/assets/projects/rag-bot-1.webp"],
   },
   {
     id: "SDLC",
@@ -228,7 +228,7 @@ export const projects = [
     github: "https://github.com/shreemathi-1/SDLC-agents",
     live: "",
     video: "",
-    screenshots: ["/assets/projects/sdlc-project.png"],
+    screenshots: ["/assets/projects/sdlc-project.webp"],
   },
 ];
 
@@ -242,8 +242,8 @@ export const internships = [
     duration: "Jun 2025 – Jul 2025",
     length: "1 month",
     location: "Chennai, India",
-    photo: "/assets/internships/web_deve_intern.jpeg",
-    certificate: "/assets/internships/web_deve_Intern.jpeg",
+    photo: "/assets/internships/web_deve_Intern.webp",
+    certificate: "/assets/internships/web_deve_Intern.webp",
     description:
     [
       "Developed a role-based Daily Situation Report (DSR) web app for managing cybercrime reports across",
@@ -262,8 +262,8 @@ export const internships = [
     duration: "Jun 2025",
     length: "15 days",
     location: "Hybrid - Coimbatore",
-    photo: "/assets/internships/testing_intern.jpeg",
-    certificate: "/assets/internships/testing_intern.jpeg",
+    photo: "/assets/internships/testing_intern.webp",
+    certificate: "/assets/internships/testing_intern.webp",
     description:
     [
       "Learned the fundamentals of web application security testing and vulnerability assessments using",
@@ -287,119 +287,119 @@ export const certifications = [
     title: "Artificial intelligence",
     issuer: "Elewayte",
     date: "April - May 2024",
-    image: "/assets/certifications/elewayte_AI_certificate.jpeg",
+    image: "/assets/certifications/elewayte_AI_certificate.webp",
   },
   {
     id: "cert-2",
     title: "HTML Essential Training",
     issuer: "LinkedIn Learning",
     date: "May 2026",
-    image: "/assets/certifications/html_LL_certificate.jpeg",
+    image: "/assets/certifications/html_LL_certificate.webp",
   },
   {
     id: "cert-3",
     title: "MySQL Essential Training",
     issuer: "LinkedIn Learning",
     date: "Jun 2026",
-    image: "/assets/certifications/mySQL_LL_certificate.jpeg",
+    image: "/assets/certifications/mySQL_LL_certificate.webp",
   },
   {
     id: "cert-4",
     title: "Learning Git and Githu",
     issuer: "LinkedIn Learning",
     date: "Jun 2026",
-    image: "/assets/certifications/git_LL_certificate.jpeg",
+    image: "/assets/certifications/git_LL_certificate.webp",
   },
   {
     id: "cert-5",
     title: "Frontend Development - HTML",
     issuer: "Great Learning",
     date: "April 2024",
-    image: "/assets/certifications/frontend_GL.jpg",
+    image: "/assets/certifications/frontend_GL.webp",
   },
   {
     id: "cert-6",
     title: "Introduction to Artificial Intelligence",
     issuer: "Great Learning",
     date: "March 2024",
-    image: "/assets/certifications/intro_AI_GL_certificate.png",
+    image: "/assets/certifications/intro_AI_GL_certificate.webp",
   },
   {
     id: "cert-7",
     title: "National Seminar on In-Vehicle Intrusion Detection System",
     issuer: "Dr. N.G.P. Institute of Technology (CSIR sponsored)",
     date: "April 2024",
-    image: "/assets/certifications/CSIR_IVIDS_seminar_certificate.jpeg",
+    image: "/assets/certifications/CSIR_IVIDS_seminar_certificate.webp",
   },
   {
     id: "cert-8",
     title: "Introduction to MongoDB",
     issuer: "MongoDB",
     date: "August 2024",
-    image: "/assets/certifications/mongodb_intro_certificate.png",
+    image: "/assets/certifications/mongodb_intro_certificate.webp",
   },
   {
     id: "cert-9",
     title: "Getting Started with MongoDB Atlas",
     issuer: "MongoDB",
     date: "August 2024",
-    image: "/assets/certifications/mongodb_atlas_certificate.png",
+    image: "/assets/certifications/mongodb_atlas_certificate.webp",
   },
   {
     id: "cert-10",
     title: "Connecting to a MongoDB Database",
     issuer: "MongoDB",
     date: "August 2024",
-    image: "/assets/certifications/mongodb_connecting_certificate.png",
+    image: "/assets/certifications/mongodb_connecting_certificate.webp",
   },
   {
     id: "cert-11",
     title: "MongoDB Basics - ICT Academy Learnathon",
     issuer: "MongoDB",
     date: "August 2024",
-    image: "/assets/certifications/mongodb_basics_ICT_certificate.png",
+    image: "/assets/certifications/mongodb_basics_ICT_certificate.webp",
   },
   {
     id: "cert-12",
     title: "Introduction to AI and Vector Search",
     issuer: "MongoDB",
     date: "August 2024",
-    image: "/assets/certifications/mongodb_vector_search_certificate.png",
+    image: "/assets/certifications/mongodb_vector_search_certificate.webp",
   },
   {
     id: "cert-13",
     title: "Generate code with Azure OpenAI Service",
     issuer: "Microsoft",
     date: "September 2024",
-    image: "/assets/certifications/ms_azure_openai_certificate.png",
+    image: "/assets/certifications/ms_azure_openai_certificate.webp",
   },
   {
     id: "cert-14",
     title: "Explore generative AI with Copilot in Bing",
     issuer: "Microsoft",
     date: "September 2024",
-    image: "/assets/certifications/ms_copilot_bing_certificate.png",
+    image: "/assets/certifications/ms_copilot_bing_certificate.webp",
   },
   {
     id: "cert-15",
     title: "Fundamentals of Generative AI",
     issuer: "Microsoft",
     date: "September 2024",
-    image: "/assets/certifications/ms_generative_ai_certificate.png",
+    image: "/assets/certifications/ms_generative_ai_certificate.webp",
   },
   {
     id: "cert-16",
     title: "Privacy and Security in Online Social Media",
     issuer: "NPTEL (IIIT Hyderabad / IIT Madras)",
     date: "Jan - Apr 2025",
-    image: "/assets/certifications/nptel_privacy_security_certificate.png",
+    image: "/assets/certifications/nptel_privacy_security_certificate.webp",
   },
   {
     id: "cert-17",
     title: "Deep Learning Onramp",
     issuer: "MathWorks",
     date: "September 2024",
-    image: "/assets/certifications/mathworks_deep_learning_certificate.png",
+    image: "/assets/certifications/mathworks_deep_learning_certificate.webp",
   },
   // {
   //   id: "cert-6",
@@ -415,7 +415,7 @@ export const achievements = [
     id: "ach-1",
     title: "Unisys UIP Project Ideathon — Finalist",
     year: "2026",
-    photo: "/assets/highlights/Unisys_certificate.jpeg",
+    photo: "/assets/highlights/Unisys_certificate.webp",
     description:
       "Team of 4 selected among top 50 nationally out of 1000+ teams for a Project Innovation Ideathon Challenge ",
   },
@@ -423,7 +423,7 @@ export const achievements = [
     id: "ach-2",
     title: "College Debugging Competition” — 1st Place",
     year: "2024",
-    photo: "/assets/highlights/CTF_winning_certificate.jpeg",
+    photo: "/assets/highlights/CTF_winning_certificate.webp",
     description:
       "Won the annual inter-department competitive Capture The Flag contest.",
   },
@@ -447,7 +447,7 @@ export const workshops = [
   organiser: "Bannari Amman Institute of Technology (BIT)",
   format: "Paper presentation & Technical Competitions",
   date: "Nov 6, 2024",
-  image: "/assets/events/BIT_Paper_Presentation_certificate.jpeg",
+  image: "/assets/events/BIT_Paper_Presentation_certificate.webp",
 },
   {
   id: "ws-2",
@@ -456,7 +456,7 @@ export const workshops = [
   format: "6-Week Buildathon",
   date: "Jun 1 – Jul 13, 2026",
   description: "Explored AI tools and learned to leverage AI-powered technologies for rapid prototyping, development, and problem-solving.",
-  image: "/assets/events/BuildX_buildathon_certificate.jpeg",
+  image: "/assets/events/BuildX_buildathon_certificate.webp",
 },
   {
   id: "ws-3",
@@ -465,7 +465,7 @@ export const workshops = [
   format: "2-Day Workshop",
   date: "Mar 15–16, 2024",
   description: "Gained hands-on exposure to LangChain and its applications in building LLM-powered applications and AI workflows.",
-  image: "/assets/events/langchain-workshop.png",
+  image: "/assets/events/langchain-workshop.webp",
 },
   {
   id: "ws-4",
@@ -473,7 +473,7 @@ export const workshops = [
   organiser: "ISRO, powered by Hack2skill",
   format: "National Hackathon (idea submission)",
   date: "2026",
-  image: "/assets/events/ISRO_antariksh_hackathon_certificate.jpg",
+  image: "/assets/events/ISRO_antariksh_hackathon_certificate.webp",
 },
   {
   id: "ws-5",
@@ -481,7 +481,7 @@ export const workshops = [
   organiser: "Coimbatore Institute of Technology (Dept. of AI&DS)",
   format: "Hackathon",
   date: "Apr 4, 2025",
-  image: "/assets/events/intellina_hackathon_certificate.png",
+  image: "/assets/events/intellina_hackathon_certificate.webp",
 },
   {
   id: "ws-6",
@@ -489,7 +489,7 @@ export const workshops = [
   organiser: "Coimbatore Institute of Technology (ECE Association, IETE & IE(I))",
   format: "National Level Technical Symposium",
   date: "Mar 22, 2024",
-  image: "/assets/events/CIT_pinnacle_paper_presentation_certificate.png",
+  image: "/assets/events/CIT_pinnacle_paper_presentation_certificate.webp",
 },
 ];
 

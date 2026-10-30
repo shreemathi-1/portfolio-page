@@ -25,7 +25,7 @@ export default function Highlights() {
                 onClick={() => setOpen(a)}
                 aria-label={`View ${a.title} full size`}
               >
-                <img src={a.photo} alt={a.title} />
+                <img src={a.photo} alt={a.title} loading="lazy" decoding="async" />
               </button>
               <div className="achievement-body">
                 <span className="achievement-year">{a.year}</span>
